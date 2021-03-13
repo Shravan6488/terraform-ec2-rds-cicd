@@ -2,7 +2,7 @@
 
 In this project, we are High Available infrastructure  with ec2 and RDS  And deployment setup with codepipeline.
 
-![Architecture](/architecuter.png)
+![Architecture](/architecture.png)
 
 ## Prerequisites
 

@@ -1,0 +1,17 @@
+
+version: 0.0
+os: linux
+
+files:
+  - source: git@github.com:chapagain/nodejs-mysql-crud.git
+    destination: /var/www/html/
+    permissions:
+    - object: /home/ec2-user
+    owner: root
+    group: root
+
+hooks:
+  BeforeInstall:
+    - location: Codedeploy/post_install.sh
+      timeout: 300
+      runas: root
